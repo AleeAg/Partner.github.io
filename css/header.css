@@ -10,8 +10,9 @@
       padding: 10px;
       border-bottom: 0.1rem solid rgb(0, 0, 0);
   }
+
   
-a{
+  .headerNav a{
     font-size: 20px;
     text-decoration: none;
     color: rgb(0, 0, 0);  
@@ -21,7 +22,8 @@ a{
       background-color: rgb(6, 10, 255);
   }
   
-  .logo{
+  .logo {
+      text-decoration: none;
       display: flex;
       align-items: center;
       
