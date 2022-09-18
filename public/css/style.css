@@ -53,3 +53,7 @@ html::-webkit-scrollbar-thumb {
   background-color: var(--color-principal);
   border-radius: 5rem;
 }
+
+section {
+  padding: 2rem 9%;
+}
