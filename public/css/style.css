@@ -1,0 +1,55 @@
+/* Fuente Poppins */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+/* Importacion de secciones */
+
+@import url(header.css);
+@import url(inicioCarrusel.css);
+@import url(cardsCarrusel.css);
+@import url(footer.css);
+
+/* Estilos generales */
+
+:root {
+  --color-principal: #2999cd;
+  --color-secundario: #e5e0e0;
+  --letra-negro: black;
+  --letra-blanco: #fff;
+}
+
+*
+{
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+::selection {
+  background-color: var(--color-principal);
+  color: var(--letra-blanco);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #fafafa;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--color-principal);
+  border-radius: 5rem;
+}

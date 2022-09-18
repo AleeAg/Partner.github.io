@@ -1,0 +1,193 @@
+#menu-btn {
+    display: none;
+    font-size: 2.5rem;
+    color: var(--letra-negro);
+    padding: .5rem;
+    cursor: pointer;
+}
+
+#menu-btn:hover {
+    transform: rotate(180deg);
+   /*  color: var(--color-principal); */
+}
+
+#login-btn:hover {
+    color: var(--letra-negro);
+}
+
+.bloque {
+    max-width: 9.5rem;
+    padding: 3rem 9%;
+}
+
+.header {
+    max-height: 9.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#fff;
+    box-shadow: 0rem .1rem  .5rem   black;
+    z-index: 1000;
+}
+
+.header .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 34.667px;
+}
+
+.header .logo img {
+    max-height: 34.667px;
+}
+
+.header .logo span {
+    /* text-transform: capitalize; */
+    font-size: 2rem;
+    color: var(--letra-negro);
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+
+/* navbar */
+
+.header .navbar a {
+    font-size: 1.6rem;
+    color: var(--letra-negro);
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover {
+    color: var(--color-principal);
+}
+
+/* login */
+
+.header .login #login-btn {
+    display: none;
+    font-size: 2.8rem;
+    color: var(--color-principal);
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.header .login .botones a {
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    color: #fff;
+    background-color: var(--letra-negro);
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: .6rem .4rem;
+    border: none;
+    border-radius: .5rem;
+}
+
+.header .login .botones .btn2 {
+    margin-left: 1rem;
+    background-color: var(--color-principal);
+}
+
+.header .login .botones a:hover {
+    background-color: rgba(0, 0, 0, 0.642);
+}
+
+.header .login .botones .btn2:hover {
+    background-color: rgba(52, 159, 188, 0.717);
+}
+
+/* ------------------------ media queries -------------------- */
+
+/* ----------- 802px ---------- */
+
+@media(max-width: 802px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+}
+
+/* ---------- Vista tablet ------------ */
+
+/* --------- 768px ---------- */
+
+@media(max-width: 768px) {
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: black;
+        clip-path: polygon(0 0 , 100% 0, 100% 0, 0 0);
+    }
+    
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    
+    .header .navbar a {
+        display: block;
+        color: #fff;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+
+    .header .login #login-btn {
+        display: block;
+    }
+
+    .header .login .botones {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, .3);
+        clip-path: polygon(0 0 , 100% 0, 100% 0, 0 0);
+    }
+
+    .header .login .botones.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .login .botones a {
+        display: block;
+        margin: 2rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .header .login .botones .btn2 {
+        margin-left: 2rem;
+    }
+
+}
+
+/* --------- Vista mobile ------------ */
+
+/* ------ 450px --------- */
+
+@media(max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .header .logo span {
+        letter-spacing: unset;
+    }
+}

@@ -1,0 +1,92 @@
+footer {
+    background-color: #222;
+    padding: 2rem 9%;
+    transition: all .2s linear;
+}
+
+footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 1.5rem;
+}
+
+footer .footer-container .caja {
+    padding: 2rem;
+}
+
+footer .footer-container .caja h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+footer .footer-container .caja .texto {
+    color: #eee;
+    font-size: 1.3rem;
+    font-weight: normal;
+    line-height: 1.8;
+    padding-bottom: 1rem;
+}
+
+footer .footer-container .caja .redes {
+    padding: 1rem 0;
+}
+
+footer .footer-container .caja .redes a i {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    background-color: var(--color-principal);
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 0 .3rem;
+    color: var(--color-secundario);
+}
+
+footer .footer-container .caja .redes a i:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+}
+
+footer .footer-container .caja .iconos a {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+footer .footer-container .caja .iconos a i {
+    margin-right: .5rem;
+    color: var(--color-principal);
+}
+
+footer .footer-container .caja .iconos a:hover i {
+    padding-right: 2rem;
+    color: var(--color-secundario);
+}
+
+footer .footer-container .caja .iconos a:hover {
+    color: var(--color-principal);
+}
+
+footer .copy {
+    padding: 3rem 0;
+    text-align: center;
+    border-top: .1rem solid #808080;
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #eee;
+}
+
+footer .copy span {
+    color: var(--color-principal);
+}
+
+@media(max-width: 1060px) {
+    footer {
+        padding: .5rem 3%;
+    }
+}

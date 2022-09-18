@@ -1,0 +1,102 @@
+section {
+    padding: 2rem 9%;
+}
+
+.inicio {
+    padding: 0%;
+    transition: all .2s linear;
+}
+
+.inicio .carrusel-inicio .caja{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.inicio .carrusel-inicio .caja .contenido {
+    text-align: center;
+    max-width: 70rem;
+}
+
+.inicio .carrusel-inicio .caja .contenido h3 {
+    font-size: 6rem;
+    color: #fff;
+    transition-delay: .2s;
+}
+
+.inicio .carrusel-inicio .caja .contenido p {
+    font-size: 2.4rem;
+    color: #eee;
+    padding: 1rem 0;
+    transition-delay: .4s;
+}
+
+.inicio .carrusel-inicio .caja .contenido .boton {
+    display: flex;
+    justify-content: center;
+    width: 35rem;
+}
+
+.inicio .carrusel-inicio .caja .contenido .boton img {
+    width: 100%;
+}
+
+/* .inicio .carrusel-inicio .caja .contenido .boton {
+    transition-delay: .6s;
+} */
+
+.inicio .carrusel-inicio .caja .contenido > * {
+    transform: translateY(2rem);
+    opacity: 0;
+}
+
+.inicio .carrusel-inicio .swiper-slide-active .contenido > * {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+@media(max-width: 460px) {
+
+    .inicio .carrusel-inicio .caja{
+        min-height: 100vh;
+        padding: 1.5rem;
+    }
+
+    .inicio .carrusel-inicio .caja .contenido {
+        text-align: center;
+        max-width: 40rem;
+    }
+    
+    .inicio .carrusel-inicio .caja .contenido h3 {
+        font-size: 3rem;
+        color: #fff;
+        /* text-transform: uppercase; */
+        transition-delay: .2s;
+    }
+    
+    .inicio .carrusel-inicio .caja .contenido p {
+        font-size: 1.3rem;
+        color: #eee;
+        padding: 1rem 0;
+        transition-delay: .4s;
+    }
+    
+    .inicio .carrusel-inicio .caja .contenido .boton .btn {
+        margin-top: 1rem;
+        display: inline-block;
+        padding: .6rem 2rem;
+        background-color: var(--color-principal);
+        font-weight: 500;
+        color: var(--color-secundario);
+        font-size: 1.5rem;
+    }
+    
+    .inicio .carrusel-inicio .caja .contenido .boton .btn:hover {
+        background-color: black;
+        color: #fff;
+    }
+}

@@ -1,0 +1,77 @@
+.cardsTitle {
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    color: var(--letra-negro);
+}
+
+.cardsTitle span {
+    color: var(--color-principal);
+    text-transform: uppercase;
+}
+
+.cards .cards-slide {
+    padding-bottom: 4rem;
+}
+
+.cards .cards-slide .box {
+    position: relative;
+    text-align: start;
+    overflow: hidden;
+    margin: 1rem 0;
+    border-radius: 5%;
+    box-shadow: 0rem .5rem  .5rem   rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.cards .cards-slide .box .image {
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cards .cards-slide .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cards .cards-slide .box:hover .image img {
+    transform: scale(1.2);
+    transition: .2s;
+}
+
+.cards .cards-slide .box .contenido {
+    padding: 1rem;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center; */
+}
+
+.cards .cards-slide .box .contenido h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--letra-negro);
+    text-transform: capitalize;
+    padding: .4rem;
+    margin-top: .5rem;
+}
+
+.cards .cards-slide .box .contenido .horario {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    padding: 0 .4rem;
+    color: var(--letra-negro);
+}
+
+.cards .cards-slide .box .contenido .nombre {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: #ccc;
+    padding: 0 .4rem;
+    letter-spacing: .3rem;
+}
+
