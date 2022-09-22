@@ -69,37 +69,70 @@
 
 /* login */
 
-.header .login #login-btn {
-    display: none;
-    font-size: 2.8rem;
-    color: var(--color-principal);
-    padding: .5rem;
+.header .login {
+    padding: .7rem .6rem;
+    background-color: #ccc;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
     cursor: pointer;
 }
 
+.header .login:hover {
+    background-color: var(--color-principal);
+    color: #fff;
+}
+
+.header .login:hover #login-btn {
+    color: #fff;
+}
+
+.header .login p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-right: .5rem;
+}
+
+.header .login #login-btn {
+    font-size: 2.4rem;
+    color: var(--color-principal);
+    background-color: rgb(63, 50, 50);
+    padding: .8rem;
+    border-radius: 50%;
+}
+
+.header .login .botones {
+    position: absolute;
+    top: 100%;
+    left: 80%;
+    right: 0;
+    clip-path: polygon(0 0 , 100% 0, 100% 0, 0 0);
+    width: 30%;
+    padding: 1rem 1.5rem;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0rem .1rem  .1rem   black;
+    border-top: 1px solid black;
+}
+
+.header .login .botones.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
 .header .login .botones a {
+    color: var(--letra-negro);
+    display: block;
     font-size: 1.5rem;
     letter-spacing: .1rem;
-    color: #fff;
-    background-color: var(--letra-negro);
     font-weight: 500;
     text-transform: capitalize;
     padding: .6rem .4rem;
-    border: none;
-    border-radius: .5rem;
 }
 
 .header .login .botones .btn2 {
-    margin-left: 1rem;
-    background-color: var(--color-principal);
-}
-
-.header .login .botones a:hover {
-    background-color: rgba(0, 0, 0, 0.642);
-}
-
-.header .login .botones .btn2:hover {
-    background-color: rgba(52, 159, 188, 0.717);
+    padding-bottom: .8rem;
+    border-bottom: 1px solid black;
 }
 
 /* ------------------------ media queries -------------------- */
@@ -148,11 +181,38 @@
         font-size: 2rem;
     }
 
+    .header .login {
+        background-color: unset;
+    }
+
+    .header .login p {
+        display: none;
+    }
+
     .header .login #login-btn {
-        display: block;
+        font-size: 2.8rem;
+    }
+
+    .header .login:hover {
+        background-color: unset;
     }
 
     .header .login .botones {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        clip-path: polygon(0 0 , 100% 0, 100% 0, 0 0);
+        width: unset;
+        padding: 1rem 1.5rem;
+        background-color: #fff;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: unset;
+        box-shadow: unset;
+    }
+
+    /* .header .login .botones {
         position: absolute;
         top: 100%;
         left: 0;
@@ -174,7 +234,7 @@
 
     .header .login .botones .btn2 {
         margin-left: 2rem;
-    }
+    } */
 
 }
 

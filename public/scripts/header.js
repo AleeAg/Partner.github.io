@@ -2,7 +2,7 @@
 
 let menu = document.getElementById("menu-btn");
 let navbar = document.querySelector(".navbar");
-let login = document.getElementById("login-btn");
+let login = document.querySelector(".login");
 let botones = document.querySelector(".botones");
 
 menu.addEventListener("click", () => {
