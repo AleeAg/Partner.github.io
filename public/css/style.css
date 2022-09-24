@@ -8,6 +8,7 @@
 @import url(inicioCarrusel.css);
 @import url(cardsCarrusel.css);
 @import url(footer.css);
+@import url(login.css);
 
 /* Estilos generales */
 
@@ -52,4 +53,8 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background-color: var(--color-principal);
   border-radius: 5rem;
+}
+
+section {
+  padding: 2rem 9%;
 }
