@@ -57,6 +57,25 @@ footer .footer-container .caja .iconos a {
     margin: 1.5rem 0;
 }
 
+footer .footer-container .caja .partners{ /*gap establece espacio entre etiquetas hijas del elemento padre (separa las imagenes y otros elementos)*/
+    display: flex;
+    gap: 15px;
+}
+
+footer .footer-container .caja .iconos a img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+}
+
+/* footer .footer-container .caja .iconos a img{
+    width: 15%;
+    height: 15%;
+    padding: 0%;
+    float: left;
+    margin: 8px;
+} */
+
 footer .footer-container .caja .iconos a i {
     margin-right: .5rem;
     color: var(--color-principal);
@@ -73,12 +92,13 @@ footer .footer-container .caja .iconos a:hover {
 
 footer .copy {
     padding: 3rem 0;
-    text-align: center;
+    align-items: center;
     border-top: .1rem solid #808080;
     margin-top: 2rem;
     font-size: 1rem;
     font-weight: 500;
     color: #eee;
+    text-align: center;
 }
 
 footer .copy span {
