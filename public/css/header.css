@@ -127,7 +127,12 @@
     letter-spacing: .1rem;
     font-weight: 500;
     text-transform: capitalize;
-    padding: .6rem .4rem;
+    padding: .6rem .8rem;
+}
+
+.header .login .botones a:hover {
+    background-color: var(--color-principal);
+    border-radius: 25px;
 }
 
 .header .login .botones .btn2 {

@@ -1,77 +1,36 @@
-.contenedor {
+.form-container {
+    /* display: grid;
+    grid-template-columns: 1fr; */
+    padding: 12px;
     width: 100%;
-    padding: 15px;
-    background: rgba(0, 0, 0, .1);
+    height: 100vh;
 }
 
-.formulario {
-    padding: 3px;
-    background-image: url(../images/logo.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.formulario h1 {
-    text-align: center;
-    color: #1a2537;
-    font-size: 40px;
-}
-
-input[type="text"],
-input[type="password"] {
-    font-size: 20px;
-    width: 82%;
-    padding: 10px;
-    border: none;
-}
-
-.input-contenedor {
-    margin-bottom: 15px;
-    border: 1px solid #aaa;
-}
-
-.icon {
-    min-width: 50px;
-    text-align: center;
-    font-size: 2rem;
-    color: #1a2537;
-}
-
-.button {
-    border: none;
+.form-container .section-form {
+    height: 100%;
     width: 100%;
-    color: white;
-    font-size: 20px;
-    background: #1a2537;
-    padding: 15px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.button:hover {
-    background: cadetblue;
+.form-container .section-form .section-form__logo {
+    display: flex;
+    align-items: center;
 }
 
-.contenedor p {
-    margin-top: 1rem;
-    text-align: center;
+.form-container .section-form .section-form__logo img {
+    max-height: 40px;
 }
 
-.link {
-    text-decoration: none;
-    color: #1a2537;
-    font-weight: 600;
+.form-container .section-form .section-form__logo span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    margin-left: 5px;
 }
 
-.link:hover {
-    color: cadetblue;
+.form-container .section-img {
+    display: none;
 }
 
-@media(min-width:768px) {
-    .formulario {
-        margin: auto;
-        width: 500px;
-        margin-top: 150px;
-        border-radius: 2%;
-    }
-}
