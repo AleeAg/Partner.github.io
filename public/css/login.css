@@ -1,12 +1,11 @@
 .form-container {
-    /* display: grid;
-    grid-template-columns: 1fr; */
-    padding: 12px;
     width: 100%;
     height: 100vh;
+    background-image: radial-gradient( circle farthest-corner at 5.7% 14.9%,  rgba(239,229,171,1) 0%, rgba(127,199,178,1) 48.7% );
 }
 
 .form-container .section-form {
+    padding: 12px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -30,7 +29,113 @@
     margin-left: 5px;
 }
 
+.form-container .section-form form {
+    height: 450px;
+    width: 100%;
+    max-width: 405px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-container .section-form form .input-contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container .section-form form .input-contenedor label {
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.form-container .section-form form .input-contenedor div {
+    width: 100%;
+    padding: 0 16px;
+    border: 1px solid black;
+    border-radius: 6px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.form-container .section-form form .input-contenedor div i {
+    font-size: 1.4rem;
+}
+
+.form-container .section-form form .input-contenedor div input {
+    width: 100%;
+}
+
+.form-container .section-form form .input-botones {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 218px;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+}
+
+.form-container .section-form form .input-botones input {
+    padding: 12px 16px;
+    background-color: var(--color-principal);
+    color: #fff;
+    border-radius: 6px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.form-container .section-form form .input-botones input:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.form-container .section-form form .input-botones a {
+    padding: 12px 16px;
+    background-color: #fff;
+    color: var(--letra-negro);
+    font-weight: 500;
+    border-radius: 6px;
+    width: 218px;
+    text-align: center;
+}
+
+
+.form-container .section-form form .input-botones a:hover {
+    background-color: #ccc;
+}
+
+.form-container .section-form form .input-botones .back {
+    background-color: unset;
+    color: var(--color-principal);
+    text-decoration: underline;
+}
+
+.form-container .section-form form .input-botones .back:hover {
+    background-color: unset;
+}
+
 .form-container .section-img {
     display: none;
 }
 
+@media(min-width: 1536px) {
+    .form-container {
+        display: grid;
+        grid-template-columns: 550px 1fr;
+    }
+
+    .form-container .section-img {
+        display: block;
+        height: 100%;
+        background-image: url(../images/hogar1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}

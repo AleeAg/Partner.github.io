@@ -19,33 +19,55 @@
 </head>
 
 <body>
+
     <div class="form-container">
         <div class="section-form">
             <div class="section-form__logo">
-                <img src="../images/logo.png" alt="">
-                <span>partner</span>
+                    <img src="../images/logo.png" alt="">
+                    <span>partner</span>
             </div>
-            <h1>
-                Sé un partner
-            </h1>
             <form action="">
+
+                <h1>
+                    Sé un partner
+                </h1>
+
                 <div class="input-contenedor">
-                    <i class="fas fa-user icon"></i>
-                    <input type="text" placeholder="Nombre Completo">
+
+                    <label for="nombre">Nombre</label>
+                    <div>
+                        <input id="nombre" type="text" placeholder="Nombre Completo">
+                        <i class="fas fa-user icon"></i>
+                    </div>
 
                 </div>
 
                 <div class="input-contenedor">
-                    <i class="fas fa-envelope icon"></i>
-                    <input type="text" placeholder="Correo Electronico">
+
+                    <label for="email">Email</label>
+                    <div>
+                        <input id="email" type="text" placeholder="Correo Electronico">
+                        <i class="fas fa-envelope icon"></i>
+                    </div>
 
                 </div>
 
                 <div class="input-contenedor">
-                    <i class="fas fa-key icon"></i>
-                    <input type="password" placeholder="Contraseña">
+
+                    <label for="clave">Contraseña</label>
+                    <div>
+                        <input type="password" placeholder="Contraseña">
+                        <i class="fas fa-key icon"></i>
+                    </div>
 
                 </div>
+                
+                <div class="input-botones">
+                    <input type="submit" value="Registrar nueva cuenta">
+                    <a href="/login">Iniciar Sesion</a>
+                    <a class="back" href="/">Volver a Inicio</a>
+                </div>
+
             </form>
             <div class="copy">
                 Copyright © 2022 <span>Partner S.R.L.</span> | Todos los derechos reservados
@@ -55,33 +77,6 @@
 
         </div>
     </div>
-    {{!-- <form class="formulario">
-
-        <h1>Sé un Partner</h1>
-        <div class="contenedor">
-
-            <div class="input-contenedor">
-                <i class="fas fa-user icon"></i>
-                <input type="text" placeholder="Nombre Completo">
-
-            </div>
-
-            <div class="input-contenedor">
-                <i class="fas fa-envelope icon"></i>
-                <input type="text" placeholder="Correo Electronico">
-
-            </div>
-
-            <div class="input-contenedor">
-                <i class="fas fa-key icon"></i>
-                <input type="password" placeholder="Contraseña">
-
-            </div>
-            <input type="submit" value="Registrate" class="button">
-            <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
-            <p>¿Ya tienes una cuenta?<a class="link" href="loginvista.html">Iniciar Sesion</a></p>
-        </div>
-    </form> --}}
 
     <!-- CDN Swipper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

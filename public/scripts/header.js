@@ -58,6 +58,9 @@ var swiper = new Swiper(".cards-slide", {
         },
         802: {
             slidesPerView: 3
+        },
+        1024: {
+            slidesPerView: 4
         }
     }
 

@@ -8,7 +8,6 @@
 
 #menu-btn:hover {
     transform: rotate(180deg);
-   /*  color: var(--color-principal); */
 }
 
 #login-btn:hover {
@@ -48,7 +47,6 @@
 }
 
 .header .logo span {
-    /* text-transform: capitalize; */
     font-size: 2rem;
     color: var(--letra-negro);
     font-weight: bold;
@@ -216,30 +214,6 @@
         border-top-left-radius: unset;
         box-shadow: unset;
     }
-
-    /* .header .login .botones {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, .3);
-        clip-path: polygon(0 0 , 100% 0, 100% 0, 0 0);
-    }
-
-    .header .login .botones.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-
-    .header .login .botones a {
-        display: block;
-        margin: 2rem;
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .header .login .botones .btn2 {
-        margin-left: 2rem;
-    } */
 
 }
 
