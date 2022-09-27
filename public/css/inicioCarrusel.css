@@ -3,8 +3,11 @@
     transition: all .2s linear;
 }
 
+.inicio .carrusel-inicio {
+    height: calc(100vh - 9.5rem);
+}
+
 .inicio .carrusel-inicio .caja{
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,13 +29,13 @@
 }
 
 .inicio .carrusel-inicio .caja .contenido h3 {
-    font-size: 6rem;
+    font-size: 5rem;
     color: #fff;
     transition-delay: .4s;
 }
 
 .inicio .carrusel-inicio .caja .contenido p {
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: #eee;
     padding: 1rem 0;
     transition-delay: .6s;
@@ -62,7 +65,7 @@
 
 }
 
-@media(max-width: 460px) {
+/* @media(max-width: 460px) {
 
     .inicio .carrusel-inicio .caja{
         min-height: 100vh;
@@ -91,4 +94,4 @@
         transition-delay: .4s;
     }
     
-}
+} */
