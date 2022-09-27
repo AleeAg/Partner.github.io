@@ -24,7 +24,7 @@
 .inicio .carrusel-inicio .caja .contenido .boton {
     display: flex;
     justify-content: center;
-    width: 35rem;
+    width: 32rem;
     transition-delay: .2s;
 }
 
@@ -64,34 +64,3 @@
     }
 
 }
-
-/* @media(max-width: 460px) {
-
-    .inicio .carrusel-inicio .caja{
-        min-height: 100vh;
-        padding: 1.5rem;
-    }
-
-    .inicio .carrusel-inicio .caja .contenido {
-        text-align: center;
-        max-width: 40rem;
-    }
-
-    .inicio .carrusel-inicio .caja .contenido .boton {
-        width: 20rem;
-    }
-    
-    .inicio .carrusel-inicio .caja .contenido h3 {
-        font-size: 3rem;
-        color: #fff;
-        transition-delay: .2s;
-    }
-    
-    .inicio .carrusel-inicio .caja .contenido p {
-        font-size: 1.3rem;
-        color: #eee;
-        padding: 1rem 0;
-        transition-delay: .4s;
-    }
-    
-} */
