@@ -84,16 +84,19 @@
     border-radius: 5%;
     box-shadow: 0rem .5rem  .5rem  rgba(0, 0, 0, .3);
     cursor: pointer;
-    height: 254px;
+    height: 160px;
     min-width: 254px;
     max-width: 282px /* !important */;
+
 }
 
-.cards_sin_slide .image{ 
-    height: 160px;
-    overflow: hidden;   
+.cards_sin_slide{
+    margin-left: 1rem;
 }
 
+.cards_sin_slide_box{
+    display: flex;
+}
 .cards_sin_slide img{
     height: 100%;
     width: 100%;
