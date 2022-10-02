@@ -32,7 +32,7 @@
 
         <nav class="navbar">
             <a href="">Inicio</a>
-            <a href="nosotros.html">Nosotros</a>
+            <a href="#nosotros">Nosotros</a>
             <a href="">Voluntariados</a>
             <a href="">Contacto</a>
         </nav>
@@ -127,6 +127,9 @@
                             <img src="../images/hogar1.jpg" alt="hogar1">
                         </div>
                         <div class="contenido">
+                            <div class="boton">
+                                Hola!
+                            </div>
                             <h3 class="titulo">Ayudanos en apoyo escolar</h3>
                             <p class="horario">este jueves de 12 a 14hs</p>
                             <span class="nombre">FunEmaus - San Cristóbal 2021</span>
@@ -137,6 +140,9 @@
                             <img src="../images/hogar2.jpg" alt="hogar1">
                         </div>
                         <div class="contenido">
+                            <div class="boton">
+                                Hola!
+                            </div>
                             <h3 class="titulo">Repartimos tuppers de comida!</h3>
                             <p class="horario">todos los sábados de 19 a 20hs</p>
                             <span class="nombre">Noche Solidaria - Pza Lezama</span>
@@ -147,6 +153,9 @@
                             <img src="../images/limpieza_bosque1.jpg" alt="hogar1">
                         </div>
                         <div class="contenido">
+                            <div class="boton">
+                                Hola!
+                            </div>
                             <h3 class="titulo">Ayudanos a recoger basura</h3>
                             <p class="horario">este domingo de 12 a 14hs</p>
                             <span class="nombre">GreenPeace - El Bosque</span>
@@ -157,6 +166,9 @@
                             <img src="../images/hogar4.jpg" alt="hogar1">
                         </div>
                         <div class="contenido">
+                            <div class="boton">
+                                Hola!
+                            </div>
                             <h3 class="titulo">Vení a repartir ropa con nosotros</h3>
                             <p class="horario">este jueves de 10 a 12hs</p>
                             <span class="nombre">La Esperanza - Santiago 2030</span>
@@ -167,6 +179,9 @@
                             <img src="../images/agua_voluntariado.jpg" alt="agua voluntariado">
                         </div>
                         <div class="contenido">
+                            <div class="boton">
+                                Hola!
+                            </div>
                             <h3 class="titulo">Llevemos agua a quienes no la tienen</h3>
                             <p class="horario">lunes a las 10hs</p>
                             <span class="nombre">AMIA - Centro</span>
@@ -177,6 +192,9 @@
                             <img src="../images/envase_ropa_voluntariado.jpg" alt="envase ropa voluntariado">
                         </div>
                         <div class="contenido">
+                            <div class="boton">
+                                Hola!
+                            </div>
                             <h3 class="titulo">Ven a repartir ropa a indigentes</h3>
                             <p class="horario">todos los sábados de 19 a 20hs</p>
                             <span class="nombre">Noche Solidaria - Pza Lezama</span>
@@ -186,107 +204,222 @@
 
             </div>
         </section>
-<!-- Carrusel-Cards fin -->
+        <!-- Carrusel-Cards fin -->
 
-{{!-- CARDS SIN CARRUSEL --}}
-<section>
-    <div class="cards_sin_slide_box">
-        <div class="cards_sin_slide">
-            <a href="#">
-           <div class="image">
-               <img src="../images/niños_juego.jpg" alt="envase ropa voluntariado">
-           </div>
-           <div class="contenido">
-               <h3 class="titulo">Ven a jugar con nuestros niños</h3>
-               <p class="horario">todos los sábados de 13 a 15hs</p>
-               <span class="nombre">Payasos sin Fronteras - Pza Lezama</span>
-           </div>
-        </a>
-        </div>
+        {{!-- Filtro de Cards --}}
 
-        <div class="cards_sin_slide">
-            <a href="#">
-           <div class="image">
-               <img src="../images/desastres_voluntariado.jpg" alt="desastre voluntariado">
-           </div>
-           <div class="contenido">
-               <h3 class="titulo">Reparto de ropa y comida en Corrientes</h3>
-               <p class="horario">este viernes a las 15hs</p>
-               <span class="nombre">Cáritas - San Miguel</span>
-           </div>
-           </a>
-        </div>
+        <section class="contenedor-filtro">
 
-        <div class="cards_sin_slide">
-            <a href="#">
-           <div class="image">
-               <img src="../images/niños_juego.jpg" alt="desastre voluntariado">
-           </div>
-           <div class="contenido">
-               <h3 class="titulo">Reparto de ropa y comida en Corrientes</h3>
-               <p class="horario">este viernes a las 15hs</p>
-               <span class="nombre">Cáritas - San Miguel</span>
-           </div>
-            </a>
-        </div>
+            <h1>Voluntariados</h1>
 
-        <div class="cards_sin_slide">
-            <a href="#">
-           <div class="image">
-               <img src="../images/desastres_voluntariado.jpg" alt="desastre voluntariado">
-           </div>
-           <div class="contenido">
-               <h3 class="titulo">Reparto de ropa y comida en Corrientes</h3>
-               <p class="horario">este viernes a las 15hs</p>
-               <span class="nombre">Cáritas - San Miguel</span>
-           </div>
-           </a>
-        </div>
-    </div>
-</section>
+            <div class="filtro__filtro">
+                <div class="filtro__categorias">
+                    <span id="todos">Todos</span>
+                    <div class="categorias">
+                        <div id="limpieza">Limpieza</div>
+                        <div id="comedor">Comedor</div>
+                        <div id="vivienda">Vivienda</div>
+                    </div>
+                    <i class="fa-solid fa-arrow-down flecha"></i>
+                </div>
+                <div class="filtro__search">
+                    <input type="text" id="buscador" placeholder="Localidades">
+                    <i class="fa-solid fa-magnifying-glass lupa"></i>
+                </div>
+            </div>
 
-    </main>
+            <div class="filtro__cards">
 
-{{!-- NOSOTROS. EL CSS DEL NOSOTROS ESTÁ EN EL FOOTER.CSS--}}
+                <a href="#" class="card articulo limpieza">
+                    <div class="image">
+                        <img src="../images/agua_voluntariado.jpg" alt="hogar1">
+                    </div>
+                    <div class="contenido">
+                        <div class="boton">
+                                Hola!
+                        </div>
+                        <h3 class="titulo">Ayudanos en apoyo escolar</h3>
+                        <p class="horario">este jueves de 12 a 14hs</p>
+                        <span class="nombre">Florencio Varela</span>
+                    </div>
+                </a>
+                <a href="#" class="card articulo comedor">
+                    <div class="image">
+                        <img src="../images/basura_volunter.jpg" alt="hogar1">
+                    </div>
+                    <div class="contenido">
+                        <div class="boton">
+                                Hola!
+                        </div>
+                        <h3 class="titulo">Recolección de basura</h3>
+                        <p class="horario">este lunes de 12 a 14hs</p>
+                        <span class="nombre">Solano</span>
+                    </div>
+                </a>
+                <a href="#" class="card articulo vivienda">
+                    <div class="image">
+                        <img src="../images/bosque_voluntariado.jpg" alt="hogar1">
+                    </div>
+                    <div class="contenido">
+                        <div class="boton">
+                                Hola!
+                        </div>
+                        <h3 class="titulo">Cuidado Forestal</h3>
+                        <p class="horario">este miercoles de 12 a 14hs</p>
+                        <span class="nombre">La Plata</span>
+                    </div>
+                </a>
+                <a href="#" class="card articulo limpieza">
+                    <div class="image">
+                        <img src="../images/desastres_voluntariado.jpg" alt="hogar1">
+                    </div>
+                    <div class="contenido">
+                        <div class="boton">
+                                Hola!
+                        </div>
+                        <h3 class="titulo">Voluntariado de alimentos</h3>
+                        <p class="horario">este domingo de 12 a 14hs</p>
+                        <span class="nombre">Quilmes</span>
+                    </div>
+                </a>
+                <a href="#" class="card articulo vivienda">
+                    <div class="image">
+                        <img src="../images/envase_ropa_voluntariado.jpg" alt="hogar1">
+                    </div>
+                    <div class="contenido">
+                        <div class="boton">
+                                Hola!
+                        </div>
+                        <h3 class="titulo">Recolección de botellas</h3>
+                        <p class="horario">este lunes de 12 a 14hs</p>
+                        <span class="nombre">Lanus</span>
+                    </div>
+                </a>
+                <a href="#" class="card articulo comedor">
+                    <div class="image">
+                        <img src="../images/hogar2.jpg" alt="hogar1">
+                    </div>
+                    <div class="contenido">
+                        <div class="boton">
+                                Hola!
+                        </div>
+                        <h3 class="titulo">Ayudanos en apoyo escolar</h3>
+                        <p class="horario">este martes de 12 a 14hs</p>
+                        <span class="nombre">Banfield</span>
+                    </div>
+                </a>
+                <a href="#" class="card articulo limpieza">
+                    <div class="image">
+                        <img src="../images/hogar2.jpg" alt="hogar1">
+                    </div>
+                    <div class="contenido">
+                        <div class="boton">
+                                Hola!
+                        </div>
+                        <h3 class="titulo">A reglar comida</h3>
+                        <p class="horario">este miercoles de 12 a 14hs</p>
+                        <span class="nombre">Claypole</span>
+                    </div>
+                </a>
+                <a href="#" class="card articulo comedor">
+                    <div class="image">
+                        <img src="../images/hogar3.jpg" alt="hogar1">
+                    </div>
+                    <div class="contenido">
+                        <div class="boton">
+                                Hola!
+                        </div>
+                        <h3 class="titulo">Recolección de basura</h3>
+                        <p class="horario">este viernes de 12 a 14hs</p>
+                        <span class="nombre">Quilmes</span>
+                    </div>
+                </a>
+                <a href="#" class="card articulo vivienda">
+                    <div class="image">
+                        <img src="../images/hogar4.jpg" alt="hogar1">
+                    </div>
+                    <div class="contenido">
+                        <div class="boton">
+                                Hola!
+                        </div>
+                        <h3 class="titulo">Apoyo de estudio</h3>
+                        <p class="horario">este jueves de 12 a 14hs</p>
+                        <span class="nombre">Nuñez</span>
+                    </div>
+                </a>
+                
+            </div>
 
-   <div class="nosotros">
-        <h1>Nosotros</h1>
-        <p>Somos Partner, una organización que trabaja para promover el voluntariado en nuestra sociedad. 
-        Unimos la necesidad con la ayuda. Hoy son más de 500.000 voluntarios que usan Partner en la Argentina, y 
-        queremos llegar al resto de Latam y el mundo. 
-        <br> 
-        <br>
-        Ayudar en comedores de algún barrio, envasar y repartir tuppercitos de comida a indigentes  con algún grupo de 
-        gente en una noche solidaria, ayudar en desastres naturales que han ocurrido en algún lugar de tu país, ayudar a 
-        construir una vivienda con alguna fundación como fundación Techo, juntarte a hacer alguna actividad verde como recoger 
-        basura en un bosque son algunas de las actividades sociales más realizadas gracias a esta plataforma y tu puedes ser parte
-        y ser un Partner.
-        <br>
-        <br>
-        Nuestra misión sería promover el cambio en el mundo desde el voluntariado en y hacia las personas. 
-        Queremos ver a un mundo más colaborativo y voluntario, esa sería nuestra visión.
-        </p>
-        <h2>Detrás de Partner</h2>
-            <div class="perfiles">
-                <div>
-                    <img src="../images/perfiles_equipo/angie_flores-1.jpg" alt="angie flores">
-                    <h3 class="titulo">Cofounder Partner</h3> 
-                    <br> 
+        </section>
+
+        {{!-- NOSOTROS --}}
+
+        <section class="nosotros" id="nosotros">
+
+            <h1>"Quiénes <span>Somos"</span></h1>
+            <p>Somos Partner, una organización que trabaja para promover el voluntariado en nuestra sociedad.
+                Unimos la necesidad con la ayuda. Hoy son más de 500.000 voluntarios que usan Partner en la Argentina, y
+                queremos llegar al resto de Latam y el mundo.
+                <br>
+                <br>
+                Ayudar en comedores de algún barrio, envasar y repartir tuppercitos de comida a indigentes con algún
+                grupo
+                de
+                gente en una noche solidaria, ayudar en desastres naturales que han ocurrido en algún lugar de tu país,
+                ayudar a
+                construir una vivienda con alguna fundación como fundación Techo, juntarte a hacer alguna actividad
+                verde
+                como recoger
+                basura en un bosque son algunas de las actividades sociales más realizadas gracias a esta plataforma y
+                tu
+                puedes ser parte
+                y ser un Partner.
+                <br>
+                <br>
+                Nuestra misión sería promover el cambio en el mundo desde el voluntariado en y hacia las personas.
+                Queremos ver a un mundo más colaborativo y voluntario, esa sería nuestra visión.
+            </p>
+            <h2>Detrás de Partner</h2>
+            <div class="nosotros__perfiles">
+
+                <div class="perfil">
+                    <div class="image">
+                        <img src="../images/perfiles_equipo/angie_flores-1.jpg" alt="angie flores">
+                    </div>
+                    <div class="name">
+                        <h3>Angie Flores</h3>
+                        <p>Cofounder <span>Partner</span></p>
+                    </div>
                     <p>Dirección de convenios internacionales y nacionales</p>
                 </div>
-                <div>
-                    <img src="../images/perfiles_equipo/kevin_ibañez-1.jpg" alt="kevin ibañez">
-                    <h3 class="titulo">Cofounder Partner</h3>
-                    <br>
+                <div class="perfil">
+                    <div class="image">
+                        <img src="../images/perfiles_equipo/kevin_ibañez-1.jpg" alt="kevin ibañez">
+                    </div>
+                    <div class="name">
+                        <h3>Kevin Ibañez</h3>
+                        <p>Cofounder <span>Partner</span></p>
+                    </div>
                     <p>Director de Tecnología</p>
                 </div>
-                <div>
-                    <img src="../images/perfiles_equipo/ale_aguilar-1.jpg" alt="ale aguilar">
-                    <h3 class="titulo">Cofounder Partner</h3>
-                    <br>
+                <div class="perfil">
+                    <div class="image">
+                        <img src="../images/perfiles_equipo/ale_aguilar-1.jpg" alt="alejandro aguilar">
+                    </div>
+                    <div class="name">
+                        <h3>Alejandro Aguilar</h3>
+                        <p>Cofounder <span>Partner</span></p>
+                    </div>
                     <p>Dirección de equipos</p>
                 </div>
             </div>
+
+        </section>
+
+    </main>
+
+    {{!-- NOSOTROS. EL CSS DEL NOSOTROS ESTÁ EN EL FOOTER.CSS--}}
+
 
     <!-- Footer-inicio -->
 
@@ -338,6 +471,7 @@
 
     <!-- Scripts -->
     <script src="../scripts/header.js"></script>
+    <script src="../scripts/filtros.js"></script>
 
 </body>
 

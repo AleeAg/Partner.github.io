@@ -1,0 +1,196 @@
+.contenedor-filtro h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.contenedor-filtro .filtro__filtro {
+    font-size: 1.6rem;
+}
+
+.contenedor-filtro .filtro__filtro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    max-width: 525px;
+    background-color: #ccc;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.contenedor-filtro .filtro__filtro .filtro__categorias {
+    padding-left: 2rem;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 25%;
+    border-right: 1px solid black;
+    position: relative;
+    z-index: 1000;
+}
+
+.contenedor-filtro .filtro__filtro .filtro__categorias > * {
+    cursor: pointer;
+}
+
+.contenedor-filtro .filtro__filtro .filtro__categorias .categorias {
+    position: absolute;
+    top: 75%;
+    left: 0%;
+    background-color: #ccc;
+    z-index: 100;
+    padding: 1rem;
+    padding-top: 2rem;
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
+    display: none;
+}
+
+.contenedor-filtro .filtro__filtro .filtro__categorias:hover .categorias {
+    display: block;
+}
+
+.contenedor-filtro .filtro__filtro .filtro__categorias .categorias div {
+    padding: 1rem 0;
+    padding-right: 1.2rem;
+}
+
+.contenedor-filtro .filtro__filtro .filtro__categorias .flecha {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.contenedor-filtro .filtro__filtro .filtro__search {
+    padding-right: 2rem;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.contenedor-filtro .filtro__filtro .filtro__search #buscador {
+    width: 100%;
+    background-color: inherit;
+    height: 24px;
+}
+
+.contenedor-filtro .filtro__filtro .filtro__search #buscador::placeholder {
+    color: black;
+}
+
+
+
+
+
+/* ------------------ Cards a Filtrar ------------------------------ */
+
+.contenedor-filtro .filtro__cards {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: minmax(254px, 282px);
+    justify-content: center;
+}
+
+.contenedor-filtro .filtro__cards .card {
+    overflow: hidden;
+    margin: 1rem 0;
+    border-radius: 5%;
+    box-shadow: 0rem .5rem  .5rem   rgba(0, 0, 0, .3);
+    cursor: pointer;
+    height: 254px;
+    position: relative;
+    /* min-width: 254px;
+    max-width: 282px; */
+}
+
+.contenedor-filtro .filtro__cards .card .image {
+    height: 160px;
+    overflow: hidden;
+}
+
+.contenedor-filtro .filtro__cards .card .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenedor-filtro .filtro__cards .card:hover .image img {
+    transform: scale(1.2);
+    transition: .2s;
+}
+
+.contenedor-filtro .filtro__cards .card .contenido {
+    height: 94px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contenedor-filtro .filtro__cards .card .contenido .boton {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: var(--color-principal);
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    font-weight: bold;
+}
+
+.contenedor-filtro .filtro__cards .card .contenido h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--letra-negro);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    overflow: hidden;
+}
+
+.contenedor-filtro .filtro__cards .card .contenido .horario {
+    font-size: 1.2rem;
+    color: var(--letra-negro);
+}
+
+.contenedor-filtro .filtro__cards .card .contenido .nombre {
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri,'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    color: rgb(105, 102, 102);
+    margin-bottom: 0px;
+}
+
+.ocultar {
+    visibility: hidden;
+    opacity: 0;
+    order: 1;
+}
+
+@media(min-width: 768px) {
+    .contenedor-filtro .filtro__cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(254px, 282px));
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        gap: 1.8rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .contenedor-filtro .filtro__cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(254px, 282px));
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: center;
+        column-gap: 4rem;
+    }
+}

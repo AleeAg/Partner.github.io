@@ -105,49 +105,6 @@ footer .copy span {
     color: var(--color-principal);
 }
 
-/* comienzo CSS DEL NOSOTROS */
-.perfiles{
-    display: flex;
-    min-width: 28px;
-    max-width: 27px;
-    padding: 42px;
-    margin-right: 40px;
-    gap: 15px;
-}
-
-.perfiles .titulo{
-    text-align: center;
-}
-
-.titulo{
-    font-size: 1.5rem;
-}
-
-.perfiles p{
-    text-align: center;
-    font-size: 50px;
-}
-
-.nosotros h1,
-          h2{
-    color: black;
-    font-size: 3.5rem;
-    margin: 20px;
-}
-
-.nosotros p{
-    font-size: 1.5rem;
-    padding: 2.5%;
-}
-
-.perfiles img{
-    width: 25rem;
-    height: 25rem;
-    object-fit: contain;   
-}
-
-/* fin CSS NOSOTROS */
-
 @media(max-width: 1060px) {
     footer {
         padding: .5rem 3%;

@@ -1,5 +1,5 @@
 .cardsTitle {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -8,10 +8,6 @@
 
 .cardsTitle span {
     color: var(--color-principal);
-}
-
-.cards .cards-slide {
-    padding-bottom: 4rem;
 }
 
 .cards .cards-slide .box {
@@ -24,7 +20,7 @@
     cursor: pointer;
     height: 254px;
     min-width: 254px;
-    max-width: 282px /* !important */;
+    max-width: 282px;
 }
 
 .cards .cards-slide .box .image {
@@ -46,23 +42,38 @@
 .cards .cards-slide .box .contenido {
     height: 94px;
     padding: 1rem;
-    /* position: absolute;
-    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cards .cards-slide .box .contenido .boton {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: var(--color-principal);
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    position: absolute;
+    top: 55%;
     left: 50%;
     transform: translate(-50%,-50%);
-    align-items: center; */
+    align-items: center;
+    font-weight: bold;
 }
 
 .cards .cards-slide .box .contenido h3 {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--letra-negro);
-    /* padding: .4rem; */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    overflow: hidden;
 }
 
 .cards .cards-slide .box .contenido .horario {
     font-size: 1.2rem;
-    padding: 0 .4rem;
     color: var(--letra-negro);
 }
 
@@ -71,8 +82,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri,'Trebuchet MS', sans-serif;
     font-weight: bolder;
     color: rgb(105, 102, 102);
-    padding: 0 .4rem;
-    letter-spacing: .3rem;
+    margin-bottom: 0px;
 }
 
 /* CARDS SIN CARRUSEL */
