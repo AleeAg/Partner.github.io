@@ -21,6 +21,7 @@
     height: 254px;
     min-width: 254px;
     max-width: 282px;
+    /* margin: 0 auto; */
 }
 
 .cards .cards-slide .box .image {

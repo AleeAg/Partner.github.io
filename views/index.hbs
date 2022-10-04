@@ -31,7 +31,7 @@
         </a>
 
         <nav class="navbar">
-            <a href="">Inicio</a>
+            <a href="/">Inicio</a>
             <a href="#nosotros">Nosotros</a>
             <a href="">Voluntariados</a>
             <a href="">Contacto</a>
@@ -122,7 +122,7 @@
 
                 <div class="swiper-wrapper">
                     {{!-- Aca se encuentran las cards del carrusel --}}
-                    <a href="#" class="swiper-slide box">
+                    <a class="swiper-slide box boton-modal">
                         <div class="image">
                             <img src="../images/hogar1.jpg" alt="hogar1">
                         </div>
@@ -135,7 +135,7 @@
                             <span class="nombre">FunEmaus - San Cristóbal 2021</span>
                         </div>
                     </a>
-                    <a href="#" class="swiper-slide box">
+                    <a class="swiper-slide box boton-modal">
                         <div class="image">
                             <img src="../images/hogar2.jpg" alt="hogar1">
                         </div>
@@ -148,7 +148,7 @@
                             <span class="nombre">Noche Solidaria - Pza Lezama</span>
                         </div>
                     </a>
-                    <a href="#" class="swiper-slide box">
+                    <a class="swiper-slide box boton-modal">
                         <div class="image">
                             <img src="../images/limpieza_bosque1.jpg" alt="hogar1">
                         </div>
@@ -161,7 +161,7 @@
                             <span class="nombre">GreenPeace - El Bosque</span>
                         </div>
                     </a>
-                    <a href="#" class="swiper-slide box">
+                    <a class="swiper-slide box boton-modal">
                         <div class="image">
                             <img src="../images/hogar4.jpg" alt="hogar1">
                         </div>
@@ -174,7 +174,7 @@
                             <span class="nombre">La Esperanza - Santiago 2030</span>
                         </div>
                     </a>
-                    <a href="#" class="swiper-slide box">
+                    <a class="swiper-slide box boton-modal">
                         <div class="image">
                             <img src="../images/agua_voluntariado.jpg" alt="agua voluntariado">
                         </div>
@@ -187,7 +187,7 @@
                             <span class="nombre">AMIA - Centro</span>
                         </div>
                     </a>
-                    <a href="#" class="swiper-slide box">
+                    <a class="swiper-slide box boton-modal">
                         <div class="image">
                             <img src="../images/envase_ropa_voluntariado.jpg" alt="envase ropa voluntariado">
                         </div>
@@ -230,7 +230,7 @@
 
             <div class="filtro__cards">
 
-                <a href="#" class="card articulo limpieza">
+                <a id="boton-modal" class="card articulo limpieza boton-modal">
                     <div class="image">
                         <img src="../images/agua_voluntariado.jpg" alt="hogar1">
                     </div>
@@ -243,7 +243,7 @@
                         <span class="nombre">Florencio Varela</span>
                     </div>
                 </a>
-                <a href="#" class="card articulo comedor">
+                <a id="boton-modal" class="card articulo comedor boton-modal">
                     <div class="image">
                         <img src="../images/basura_volunter.jpg" alt="hogar1">
                     </div>
@@ -256,7 +256,7 @@
                         <span class="nombre">Solano</span>
                     </div>
                 </a>
-                <a href="#" class="card articulo vivienda">
+                <a href="#" class="card articulo vivienda boton-modal">
                     <div class="image">
                         <img src="../images/bosque_voluntariado.jpg" alt="hogar1">
                     </div>
@@ -269,7 +269,7 @@
                         <span class="nombre">La Plata</span>
                     </div>
                 </a>
-                <a href="#" class="card articulo limpieza">
+                <a href="#" class="card articulo limpieza boton-modal">
                     <div class="image">
                         <img src="../images/desastres_voluntariado.jpg" alt="hogar1">
                     </div>
@@ -282,7 +282,7 @@
                         <span class="nombre">Quilmes</span>
                     </div>
                 </a>
-                <a href="#" class="card articulo vivienda">
+                <a href="#" class="card articulo vivienda boton-modal">
                     <div class="image">
                         <img src="../images/envase_ropa_voluntariado.jpg" alt="hogar1">
                     </div>
@@ -295,7 +295,7 @@
                         <span class="nombre">Lanus</span>
                     </div>
                 </a>
-                <a href="#" class="card articulo comedor">
+                <a href="#" class="card articulo comedor boton-modal">
                     <div class="image">
                         <img src="../images/hogar2.jpg" alt="hogar1">
                     </div>
@@ -308,7 +308,7 @@
                         <span class="nombre">Banfield</span>
                     </div>
                 </a>
-                <a href="#" class="card articulo limpieza">
+                <a href="#" class="card articulo limpieza boton-modal">
                     <div class="image">
                         <img src="../images/hogar2.jpg" alt="hogar1">
                     </div>
@@ -321,7 +321,7 @@
                         <span class="nombre">Claypole</span>
                     </div>
                 </a>
-                <a href="#" class="card articulo comedor">
+                <a href="#" class="card articulo comedor boton-modal">
                     <div class="image">
                         <img src="../images/hogar3.jpg" alt="hogar1">
                     </div>
@@ -334,7 +334,7 @@
                         <span class="nombre">Quilmes</span>
                     </div>
                 </a>
-                <a href="#" class="card articulo vivienda">
+                <a href="#" class="card articulo vivienda boton-modal">
                     <div class="image">
                         <img src="../images/hogar4.jpg" alt="hogar1">
                     </div>
@@ -460,6 +460,18 @@
 
     </footer>
     <!-- Footer-fin -->
+    
+    <!-- Ventana Modal inicio -->
+
+    <div id="modal" class="modal">
+        <div class="modal-container">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error nihil ut recusandae est eveniet ratione ad, nam dignissimos dolorem modi dolore, cumque blanditiis natus aut deserunt ipsa consectetur in dolores.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Ventana Modal fin -->
 
     <!-- CDN Swipper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

@@ -49,3 +49,18 @@ document.getElementById("todos").addEventListener("click", ()=> {
         elemento.classList.remove("ocultar")
     })
 })
+
+/* Ventana modal */
+
+document.querySelectorAll(".boton-modal").forEach(modal => {
+    modal.addEventListener("click", e => {
+        e.preventDefault()
+        document.getElementById("modal").classList.add("show-modal")
+    })
+})
+
+document.getElementById("modal").addEventListener("click", e => {
+    if(e.target.classList.contains("modal")) {
+        document.getElementById("modal").classList.remove("show-modal")
+    }
+})

@@ -16,7 +16,7 @@
 }
 
 .nosotros p {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .nosotros .nosotros__perfiles {
@@ -33,7 +33,7 @@
     position: relative;
     text-align: center;
     background-color: #fafafa;
-    box-shadow: 0 .1rem .5rem rgba(0, 0, 0, .1);
+    box-shadow: 0rem .5rem  .5rem   rgba(0, 0, 0, .3);
     border-radius: .5rem;
 }
 
