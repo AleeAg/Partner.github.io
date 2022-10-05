@@ -31,10 +31,10 @@
         </a>
 
         <nav class="navbar">
-            <a href="/">Inicio</a>
+            <a href="#">Inicio</a>
+            <a href="#voluntariados">Voluntariados</a>
             <a href="#nosotros">Nosotros</a>
-            <a href="">Voluntariados</a>
-            <a href="">Contacto</a>
+            <a href="#contacto">Contacto</a>
         </nav>
 
         <div class="login">
@@ -208,7 +208,7 @@
 
         {{!-- Filtro de Cards --}}
 
-        <section class="contenedor-filtro">
+        <section id="voluntariados" class="contenedor-filtro">
 
             <h1>Voluntariados</h1>
 
@@ -423,7 +423,7 @@
 
     <!-- Footer-inicio -->
 
-    <footer>
+    <footer id="contacto">
         <div class="footer-container">
 
             <div class="caja">
@@ -465,13 +465,22 @@
 
     <div id="modal" class="modal">
         <div class="modal-container">
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error nihil ut recusandae est eveniet ratione ad, nam dignissimos dolorem modi dolore, cumque blanditiis natus aut deserunt ipsa consectetur in dolores.
-            </p>
+            <div class="modal__cabezera">Chat de Voluntariado</div>
+            <div class="modal__chat">
+                <div class="modal__hola">
+                    Hola, para contactarte con nuestros voluntariados primero debes registrarte
+                </div>
+                <div class="modal__enviar">
+                    <input type="text" placeholder="Enviar..">
+                    <ion-icon class="send" name="send"></ion-icon>
+                </div>
+            </div>
         </div>
     </div>
     
     <!-- Ventana Modal fin -->
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
     <!-- CDN Swipper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

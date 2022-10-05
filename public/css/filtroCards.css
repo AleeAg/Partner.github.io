@@ -83,7 +83,11 @@
 }
 
 
-
+.contenedor-filtro .filtro__filtro .filtro__search i {
+    background-color: hotpink;
+    padding: 1rem;
+    border-radius: 50%;
+}
 
 
 /* ------------------ Cards a Filtrar ------------------------------ */
