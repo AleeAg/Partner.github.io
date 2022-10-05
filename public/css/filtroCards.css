@@ -84,7 +84,7 @@
 
 
 .contenedor-filtro .filtro__filtro .filtro__search i {
-    background-color: hotpink;
+    background-color: rgb(247, 31, 139);
     padding: 1rem;
     border-radius: 50%;
 }
@@ -138,8 +138,8 @@
 .contenedor-filtro .filtro__cards .card .contenido .boton {
     font-size: 1.2rem;
     color: #fff;
-    background-color: var(--color-principal);
-    border-radius: 1rem;
+    background-color: orangered;
+    border-radius: 1.8rem;
     padding: 1rem 1.5rem;
     position: absolute;
     top: 55%;

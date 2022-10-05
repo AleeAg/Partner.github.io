@@ -51,8 +51,8 @@
 .cards .cards-slide .box .contenido .boton {
     font-size: 1.2rem;
     color: #fff;
-    background-color: var(--color-principal);
-    border-radius: 1rem;
+    background-color: orangered;
+    border-radius: 1.8rem;
     padding: 1rem 1.5rem;
     position: absolute;
     top: 55%;
